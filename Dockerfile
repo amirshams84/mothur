@@ -1,8 +1,13 @@
 FROM amirshams/python2.7
+MAINTAINER Amir Shams <amir.shams84@gmail.com>
 
-MAINTAINER Hadrien Gourlé <gourlehadrien@gmail.com>
+##############################################################
+# Software:             mothur
+# Software Version:     1.38.0
+# Software Website:     www.mothur.org
+# Description:          16S analyser
+##############################################################
 
-#installs mothur
 RUN wget https://github.com/mothur/mothur/releases/download/v1.38.1/Mothur.linux_64.zip && \
     unzip Mothur.linux_64.zip && \
     rm Mothur.linux_64.zip && \
